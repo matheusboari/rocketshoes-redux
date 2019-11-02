@@ -1,11 +1,15 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import { View } from "react-native";
-
-// import { Container } from './styles';
+import Routes from './routes';
 
 export default class App extends Component {
   render() {
-    return <View />;
+    return (
+      <BrowserRouter>
+        {/* <Header /> */}
+        <Routes />
+      </BrowserRouter>
+    );
   }
 }
